@@ -1,20 +1,25 @@
 # born2beroot
 born2beroot project
+
+Some Important Observations:
+
 To resolve the permission issue: **`sudo chmod 777 wp-content/`**
 
-Should not use "@" symbol in password
+Should not use "@" symbol in password to login to ftp
 
 While cloning uncheck ip address not change it 
 
 check root, user password rules using : sudo chage -l <root>
 
-sudo chage -l <amathew> etc.
+sudo chage -l <username> etc.
 
-Port 21 → FPT
+Port 21 → for FPT
 
-Port 80 →wordpress
+Port 80 → for wordpress website access
 
-Only leave port 42 and 42(v6) open before evaluation
+Leave only port 42 and 42(v6) open before evaluation. (sudo ufw status)
+
+Only Follow the below 2 Tutorials to set up the vitual mechine. Not knowing and following other tutorials will be a trouble later. 
 
 Basic part:
 
@@ -47,7 +52,7 @@ Suggestions:
 
 **Born2beroot**
 
-Most Important : user password should not contain @ symbol otherwise, it will not get connected
+Most Important : user password should not contain @ symbol otherwise, ftp will not get connected
 
 [https://www.technoduet.com/a-simple-way-to-connect-to-remote-ftp-sever-on-mac/](https://www.technoduet.com/a-simple-way-to-connect-to-remote-ftp-sever-on-mac/)
 
